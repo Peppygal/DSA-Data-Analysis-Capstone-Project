@@ -139,9 +139,7 @@ These insights were grouped under each case scenario to align with business obje
    group by Product_categor
    order by TotalSales desc
    ```
-   
    <img width="378" alt="SQ a" src="https://github.com/user-attachments/assets/af086735-1954-4276-bd38-8c27f10d833f" />
-
 
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
   
@@ -152,21 +150,135 @@ These insights were grouped under each case scenario to align with business obje
    from [dbo].[KMS Sql Case Study]
    group by Regio
    order by TotalSales desc
-   ```
-      
+   ```  
    <img width="322" alt="SQ bi" src="https://github.com/user-attachments/assets/84797b20-7226-4283-a371-a29b45085364" />
 
    - Bottom 3 regions
     
-     ```sql
-     Select top 3  Region, SUM(Distinct Sales) AS TotalSales
-     from [dbo].[KMS Sql Case Study]
-     group by Region
-     order by TotalSales asc
-     ```
-     <img width="322" alt="SQ bii" src="https://github.com/user-attachments/assets/913f75f7-d737-4324-a5f8-4df32d77013d" />
+   ```sql
+   Select top 3  Region, SUM(Distinct Sales) AS TotalSales
+   from [dbo].[KMS Sql Case Study]
+   group by Region
+   order by TotalSales asc
+   ```
+   <img width="322" alt="SQ bii" src="https://github.com/user-attachments/assets/913f75f7-d737-4324-a5f8-4df32d77013d" />
 
 3. What were the total sales of appliances in Ontario?
+
+   ```sql
+   SELECT Region,  Product_Sub_Category, SUM(Sales) AS TotalSales
+   FROM [dbo].[KMS Sql Case Study]
+   WHERE Region = 'Ontario'
+   AND Product_Sub_Category = 'Appliances'
+   GROUP BY Region,  Product_Sub_Category
+   ORDER BY TotalSales desc
+   ```
+   <img width="405" alt="SQ c" src="https://github.com/user-attachments/assets/544c5c6d-920d-49e0-9762-a2bb59844899" />
+
+4. Advise the management of KMS on what to do to increase the revenue from the bottom 
+   10 customers
+
+   ```sql
+   Select top 10 Customer_Name, SUM(Sales) AS TotalSales
+   from [dbo].[KMS Sql Case Study]
+   group by Customer_Name
+   order by TotalSales asc
+   ```
+   <img width="456" alt="SQL d" src="https://github.com/user-attachments/assets/91708232-af5a-4e6d-92cf-2b6f58eb5a37" />
+
+5. KMS incurred the most shipping cost using which shipping method?
+
+   ```sql
+   Select top 5 Ship_Mode, SUM(Shipping_Cost) AS TotalShipping_Cost
+   from [dbo].[KMS Sql Case Study]
+   group by Ship_Mode
+   order by TotalShipping_Cost desc
+   ```
+   <img width="511" alt="SQL e" src="https://github.com/user-attachments/assets/09b99099-4eba-4a10-883c-0df1d6aa7549" />
+
+### Case Scenario II 
+
+6. Who are the most valuable customers, and what products or services do they typically 
+   purchase?
+
+   i. Who are the most valuable customers?
+
+   ```sql
+   SELECT top 5 Row_ID, Customer_Name, SUM(Sales) AS TotalSpent
+   FROM [dbo].[KMS Sql Case Study]
+   GROUP BY Row_ID, Customer_Name
+   ORDER BY TotalSpent DESC
+   ```
+  <img width="394" alt="SQ fii" src="https://github.com/user-attachments/assets/7b6f0655-1bcf-4d68-a0e0-a18d355c319b" />
+
+   ii. what products or services do they typically purchase? 
+
+   ```sql
+  SELECT TOP 5 [Customer_Name], [Product_Name],
+  SUM(Sales) AS Total_Sales
+  FROM [dbo].[KMS Sql Case Study]
+  GROUP BY [Customer_Name], [Product_Name]
+  ORDER BY Total_Sales DESC;
+  ```
+  <img width="392" alt="SQ fi" src="https://github.com/user-attachments/assets/9ca44457-466c-455f-b334-3891debb0b33" />
+
+7. Which small business customer had the highest sales?
+
+   ```sql
+   SELECT TOP 1 Customer_Segment, Customer_Name, SUM(Sales) AS TotalSales
+   FROM [dbo].[KMS Sql Case Study]
+   WHERE Customer_Segment = 'Small Business'
+   GROUP BY Customer_Segment, Customer_Name
+   ORDER BY TotalSales desc
+   ```
+  <img width="409" alt="SQL g" src="https://github.com/user-attachments/assets/2e3f2cf8-5d52-48ef-b47c-281b3c8b25a3" />
+
+8. Which Corporate Customer placed the most number of orders in 2009 – 2012?
+   ```sql
+   SELECT TOP 1 Customer_Name, COUNT(DISTINCT Order_ID) AS Number_of_Orders
+   FROM [dbo].[KMS Sql Case Study]
+   WHERE customer_Segment = 'Corporate'
+   AND Order_Date BETWEEN '2009-01-01' AND '2012-12-31'
+   GROUP BY Customer_Name
+   ORDER BY Number_of_Orders DESC;
+   ```
+   <img width="544" alt="SQL h" src="https://github.com/user-attachments/assets/08a7f250-9e25-4cab-8164-37ce4dbee5c9" />
+
+9. Which consumer customer was the most profitable one?
+   ```sql
+   SELECT TOP 1 [Customer_Name], SUM(Profit) AS Total_Profit
+   FROM [dbo].[KMS Sql Case Study]
+   WHERE [Customer_Segment] = 'Consumer'
+   GROUP BY [Customer_Name]
+   ORDER BY Total_Profit DESC;
+   ```
+   <img width="429" alt="SQL I" src="https://github.com/user-attachments/assets/61d0a714-7c43-4253-a70a-b7f7ed1be0e6" />
+
+10. Which customer returned items, and what segment do they belong to?
+
+    ```sql
+    SELECT DISTINCT o.[Order_ID], o.[Customer_Name], o.[Customer_Segment]
+    FROM [dbo].[KMS Sql Case Study] o
+    JOIN [dbo].[OrderStatus] r
+    ON o.[Order_ID] = r.[Order_ID]
+    WHERE r.Status = 'Returned';
+    ```
+    <img width="467" alt="SQ j" src="https://github.com/user-attachments/assets/f630e8e0-1b73-414b-9300-c3de15bf1911" />
+
+11. If the delivery truck is the most economical but the slowest shipping method and 
+    Express Air is the fastest but the most expensive one, do you think the company 
+    appropriately spent shipping costs based on the Order Priority? Explain your answer.
+
+     ```sql
+     SELECT [Order_Priority], [Ship_Mode],
+     COUNT([Order_ID]) AS OrderCount,
+     ROUND(SUM(Sales - Profit), 2) AS EstimatedShippingCost,
+     AVG(DATEDIFF(day, [Order_Date], [Ship_Date])) AS AvgShipDays
+     FROM [dbo].[KMS Sql Case Study]
+     GROUP BY [Order_Priority], [Ship_Mode]
+     ORDER BY [Order_Priority], [Ship_Mode] DESC;
+     ```
+     <img width="408" alt="SQ k" src="https://github.com/user-attachments/assets/bdea7a97-0ba2-47c1-8a10-66b7aaf76f27" />
 
 
 
