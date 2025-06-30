@@ -128,13 +128,14 @@ Recommendations were generated based on patterns observed.
 These insights were grouped under each case scenario to align with business objectives.
 
 
+### SQL QUERIES
+
+
+
+
       
-    ``` sql
-    select Product_Category, SUM(distinct Row_ID) as TotalSales
-    from [dbo].[KMS Sql Case Study]
-    group by Product_category
-    order by TotalSales desc
-    ```
+   
+    
 
 
 
