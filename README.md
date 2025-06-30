@@ -134,7 +134,6 @@ These insights were grouped under each case scenario to align with business obje
     from [dbo].[KMS Sql Case Study]
     group by Product_category
     order by TotalSales desc
-
     ```
 
 
