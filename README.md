@@ -456,6 +456,7 @@ Continuously track shipping method efficiency to ensure cost-effectiveness over 
      ORDER BY [Order_Priority], [Ship_Mode] DESC;
      ```
      <img width="408" alt="SQ k" src="https://github.com/user-attachments/assets/bdea7a97-0ba2-47c1-8a10-66b7aaf76f27" />
+     
 
 
 
