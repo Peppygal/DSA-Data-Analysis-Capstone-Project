@@ -130,15 +130,43 @@ These insights were grouped under each case scenario to align with business obje
 
 ### SQL QUERIES
 
+### Case Scenario I 
+1. Which product category had the highest sales?
 
-
-
-      
+   ```sql
+   Select Product_Category, SUM(distinct Row_ID) as TotalSale
+   from [dbo].[KMS Sql Case Study]
+   group by Product_categor
+   order by TotalSales desc
+   ```
    
+   <img width="378" alt="SQ a" src="https://github.com/user-attachments/assets/af086735-1954-4276-bd38-8c27f10d833f" />
+
+
+2. What are the Top 3 and Bottom 3 regions in terms of sales?
+  
+   - Top 3 regions
+
+   ```sql
+   Select top 3 Region, SUM(Distinct Sales) AS TotalSales
+   from [dbo].[KMS Sql Case Study]
+   group by Regio
+   order by TotalSales desc
+   ```
+      
+   <img width="322" alt="SQ bi" src="https://github.com/user-attachments/assets/84797b20-7226-4283-a371-a29b45085364" />
+
+   - Bottom 3 regions
     
+     ```sql
+     Select top 3  Region, SUM(Distinct Sales) AS TotalSales
+     from [dbo].[KMS Sql Case Study]
+     group by Region
+     order by TotalSales asc
+     ```
+     <img width="322" alt="SQ bii" src="https://github.com/user-attachments/assets/913f75f7-d737-4324-a5f8-4df32d77013d" />
 
-
-
+3. What were the total sales of appliances in Ontario?
 
 
 
