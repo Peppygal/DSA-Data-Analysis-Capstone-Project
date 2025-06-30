@@ -16,13 +16,13 @@ Capstone Project Documentation with the Incubator's Hub.
 - [Conclusion](conclusion)
 
 ### Project Overview
-
+---
 This project involves performing data-driven analysis on the KMS Superstore dataset using SQL to generate actionable business insights. The goal is to evaluate customer behavior, product performance, regional trends, and operational efficiency through a series of questions categorized into two case scenarios.
 By examining this data, we aim to support strategic decision-making around inventory, pricing, and marketing efforts to drive growth and improve profitability.
 The analysis focuses on helping the KMS management team understand where the business is thriving, what areas need improvement, and how strategic decisions can be supported through data.
 
 ### Objectives
-
+---
 - Identify which product categories and regions contribute most to revenue
 
 👉 This involves analyzing the total sales across different product categories (e.g., Technology, Furniture) and geographical regions (e.g., West, Ontario).
@@ -48,7 +48,7 @@ The analysis focuses on helping the KMS management team understand where the bus
 
 
 ### Expected Outcome
-
+---
 Through this analysis, the project seeks to deliver actionable insights that will help:
 
 - Ranked list of product categories and regions by total sales
@@ -76,11 +76,13 @@ How to adjust shipping strategy to save costs
 🔍 Benefit: Provides the company with practical, data-backed actions to grow revenue and reduce waste.
 
 ### Data Source
+---
 The primary source of data used here is Data Sale.csv and this is an open source data that can be freely downloaded from an open source online such as Kaggle or FRED or any other data repository site.
 
 Dataset Name: KMS Superstore Data
 
 #### Exploratory Data Analysis
+---
 
 EDA involved the exploration of the data using SQL to answer some questions about the Data such as:
    1. Which product category had the highest sales? 
@@ -89,13 +91,14 @@ EDA involved the exploration of the data using SQL to answer some questions abou
    4. KMS incurred the most shipping cost using which shipping method?
  
 #### Tools Used
+---
 
 - Structured Query Language- SQL for querying and analysis.
 - SSMS (as SQL editor).
 - Github for Portfolio building.
 
-
 #### Analysis
+---
 
 The analysis was conducted usingStructured Query Language -SQL and it was used for Querying, joins, aggregations, subqueries, analytics, following a series of steps outlined below:
 
@@ -131,6 +134,7 @@ These insights were grouped under each case scenario to align with business obje
 ### SQL QUERIES
 
 ### Case Scenario I 
+---
 1. Which product category had the highest sales?
 
    ```sql
@@ -141,6 +145,51 @@ These insights were grouped under each case scenario to align with business obje
    ```
    <img width="378" alt="SQ a" src="https://github.com/user-attachments/assets/af086735-1954-4276-bd38-8c27f10d833f" />
 
+### Explanation 
+
+🔹 Purpose of the Query:
+
+This query is to identify the top-performing product category in terms of total sales. This helps uncover where the business generates the most revenue.
+
+🔹 Breakdown of the Quer:
+
+Grouped sales data by Product Category
+
+Summed the Sales for each category
+
+Ordered the results in descending order of total sales
+
+🔹 Insight Derived:
+
+The output helps us understand the product category with the highest total sales, shows which area drives the most revenue. 
+
+This is valuable for sales strategy, inventory planning, and marketing focus.
+
+🔹 Relevance to the Dataset and Project:
+
+This query is highly relevant because it utilizes key fields in the dataset—Product Category and Sales—to reveal which category generates the most revenue.
+
+Within the context of the project (analyzing business performance using the KMS Superstore dataset), identifying the top-selling product category helps:
+
+Evaluate sales concentration
+
+Understand customer purchasing behavior
+
+Support strategic decisions on inventory, promotions, and supply chain focus
+
+It aligns with the overall project goal of using data to drive informed, actionable insights in business operations.
+
+🔹 Potential Next Steps:
+
+Deep dive into sub-categories under that top category to find specific bestsellers.
+
+Analyze customer segments buying from this category.
+
+Consider promotional campaigns or stock prioritization for this high-performing category.
+
+Investigate whether this is a seasonal trend or consistent over time.
+
+---
 2. What are the Top 3 and Bottom 3 regions in terms of sales?
   
    - Top 3 regions
@@ -163,6 +212,66 @@ These insights were grouped under each case scenario to align with business obje
    ```
    <img width="322" alt="SQ bii" src="https://github.com/user-attachments/assets/913f75f7-d737-4324-a5f8-4df32d77013d" />
 
+   Purpose of the Query:
+
+To identify which regions contribute the most and least to overall sales. This supports regional performance analysis and strategic business decisions.
+
+Breakdown of the Queries:
+
+Two SQL queries were used:
+
+1. Top 3 Regions by Sales
+
+SELECT Region, SUM(Sales) AS Total_Sales
+FROM Orders
+GROUP BY Region
+ORDER BY Total_Sales DESC
+LIMIT 3;
+
+2. Bottom 3 Regions by Sales
+
+SELECT Region, SUM(Sales) AS Total_Sales
+FROM Orders
+GROUP BY Region
+ORDER BY Total_Sales ASC
+LIMIT 3;
+
+Aggregates total sales per region
+
+Sorts in descending/ascending order
+
+Limits results to top/bottom 3
+
+Insight Derived:
+
+Top 3 Regions:
+West, Ontario, and Peru are the highest-performing regions. These are the strongest markets and contribute the most to revenue.
+
+Bottom 3 Regions:
+Nunavut, Northwest Territories, and Yukon recorded the lowest sales. These regions are underperforming compared to others.
+
+This query suggests variations in customer demand, market size, or distribution reach across regions.
+
+Potential Next Steps:
+
+- For Top Regions (West, Ontario, Prarie):
+
+Investigate successful strategies and replicate them elsewhere.
+
+Consider expanding product lines or services in these regions.
+
+Continue investing in marketing and logistics to sustain growth.
+
+- For Bottom Regions (Nunavut, Northwest Territories, Yukon):
+
+Conduct a root-cause analysis: Are the issues logistical, demographic, or product-fit related?
+
+Tailor marketing or outreach strategies to these regions.
+
+Consider partnerships or incentives to boost visibility and access.
+
+---
+
 3. What were the total sales of appliances in Ontario?
 
    ```sql
@@ -174,6 +283,7 @@ These insights were grouped under each case scenario to align with business obje
    ORDER BY TotalSales desc
    ```
    <img width="405" alt="SQ c" src="https://github.com/user-attachments/assets/544c5c6d-920d-49e0-9762-a2bb59844899" />
+   
 
 4. Advise the management of KMS on what to do to increase the revenue from the bottom 
    10 customers
@@ -186,6 +296,39 @@ These insights were grouped under each case scenario to align with business obje
    ```
    <img width="456" alt="SQL d" src="https://github.com/user-attachments/assets/91708232-af5a-4e6d-92cf-2b6f58eb5a37" />
 
+Insight Dervied: 
+
+Bottom 10 Customers by Revenue
+
+An analysis of the customer base shows that the bottom 10 customers contribute the least revenue to the company. While these customers currently have minimal sales activity, they represent a potential growth opportunity if strategically nurtured.
+
+Recommendations to Increase Revenue from Bottom 10 Customers:
+
+🔹 1. Understand Their Behavior
+-  Conduct a customer profile analysis to understand their industry, purchase history, order frequency, and preferences.
+Ask: Why aren’t they buying more? — Is it pricing? Product fit? Awareness?
+
+🔹 2. Personalized Engagement
+-  Assign a sales rep or customer success contact to engage them directly. Tailor communication and recommendations based on their specific needs or sector.
+
+🔹 3. Offer Targeted Promotions or Incentives
+-  Design exclusive offers, discounts, or loyalty incentives to encourage repeat purchases and increase order size.
+
+🔹 4. Cross-Selling and Upselling
+-  Review the products they’ve purchased and suggest complementary or higher-value alternatives.
+
+🔹 5. Improve Customer Experience
+-  Make sure these customers are not facing service issues, delivery delays, or poor onboarding. Sometimes, low revenue is caused by friction in the customer journey.
+
+🔹 6. Survey or Feedback Collection
+-  Send a short survey to understand what’s holding them back from buying more — pricing, value, competition, etc.
+
+🔹 7. Monitor and Measure Progress
+-  Create a small dashboard or tracker to monitor how these bottom 10 customers respond to your interventions over time.
+
+The bottom 10 customers currently contribute the least to KMS revenue. However, with focused engagement, tailored offers, and improved customer experience, these accounts can be transformed into active, higher-value customers. Unlocking even a modest increase in their spending could result in measurable revenue growth.
+
+---
 5. KMS incurred the most shipping cost using which shipping method?
 
    ```sql
@@ -195,6 +338,40 @@ These insights were grouped under each case scenario to align with business obje
    order by TotalShipping_Cost desc
    ```
    <img width="511" alt="SQL e" src="https://github.com/user-attachments/assets/09b99099-4eba-4a10-883c-0df1d6aa7549" />
+
+Insight Derived:
+
+From our analysis, Delivery Truck is the shipping method that incurs the highest total shipping cost, amounting to 51,971.94 (approx).
+This suggests that delivery trucks are either:
+
+Used more frequently, Cover longer distances, or Incur higher operational/logistical expenses compared to other methods.
+
+ Potential Next Steps:
+
+Break down shipping cost per order to see if delivery trucks are cost-efficient on a per-unit basis.
+
+Compare costs across other shipping methods (e.g., First Class, Standard Class, Express).
+
+Examine regions or order types relying heavily on delivery trucks—are there alternatives?
+
+Recommendations:
+
+1. Optimize Delivery Routes:
+Use route optimization tools or software to reduce mileage and fuel costs.
+
+2. Evaluate Alternative Methods:
+Consider shifting certain deliveries to lower-cost options where feasible.
+
+3. Negotiate with Carriers:
+If trucks are third-party-operated, review and renegotiate contracts to reduce costs.
+
+4. Bundle Shipments:
+Group orders going to similar locations to reduce the number of truck trips.
+
+5. Monitor Performance:
+Continuously track shipping method efficiency to ensure cost-effectiveness over time.
+
+---
 
 ### Case Scenario II 
 
