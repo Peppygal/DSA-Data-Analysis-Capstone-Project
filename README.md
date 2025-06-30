@@ -4,25 +4,16 @@ Capstone Project Documentation with the Incubator's Hub.
 #### Kultra Mega Stores Inventory Sales Analysis
 
 
-#### Project Overview
-
-#### Objectives
-
-#### Expected Outcomes
-
-#### Data Source
-
-#### Exploratory Data Analysis
-
-#### Tools Used
-
-#### Analysis
-
-#### Business Task and Dashboard Component
-
-#### Key Strategies and Recommendations
-
-#### Conclusion
+- [Project Overview](project-overview)
+- [Objectives](obectives)
+- [Expected Outcomes](expected-outcomes)
+- [Data Source](data-source)
+- [Exploratory Data Analysis](exploratory-data-analysis)
+- [Tools Used](tools-used)
+- [Analysis](analysis)
+- [Business Task and Dashboard Component](business-task-dashboard-component)
+- [Key Strategies and Recommendations](key-strategies-and-recommendation)
+- [Conclusion](conclusion)
 
 ### Project Overview
 
@@ -138,11 +129,12 @@ These insights were grouped under each case scenario to align with business obje
 
 
       
-    ```SQL
+    ``` sql
     select Product_Category, SUM(distinct Row_ID) as TotalSales
     from [dbo].[KMS Sql Case Study]
     group by Product_category
     order by TotalSales desc
+
     ```
 
 
