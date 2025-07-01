@@ -197,7 +197,7 @@ Investigate whether this is a seasonal trend or consistent over time.
    ```sql
    Select top 3 Region, SUM(Distinct Sales) AS TotalSales
    from [dbo].[KMS Sql Case Study]
-   group by Regio
+   group by Region
    order by TotalSales desc
    ```  
    <img width="322" alt="SQ bi" src="https://github.com/user-attachments/assets/84797b20-7226-4283-a371-a29b45085364" />
@@ -398,6 +398,28 @@ Continuously track shipping method efficiency to ensure cost-effectiveness over 
   ORDER BY Total_Sales DESC;
   ```
   <img width="392" alt="SQ fi" src="https://github.com/user-attachments/assets/9ca44457-466c-455f-b334-3891debb0b33" />
+
+  ### Insight on Analysis
+
+The analysis identified Emily Phan, Jasper Kasipu, Greg Tawira, Dennis Ken, and Karen Kalisi as among the most valuable customers based on total sales and repeat purchases. These customers consistently purchase high-value items, including copiers and tech equipment such as Polycom ViewStation and Canon PC 940 Copiers.
+
+
+### Relevance to Dataset & Project
+
+This finding supports the project's objective to understand customer value and behaviour, helping KMS identify its top revenue contributors. It also shows which products drive loyalty and profitability.
+
+
+### Potential Next Steps & Recommendation
+
+- Build loyalty programs targeting these high-value customers.
+
+- Offer exclusive deals or early product access to retain and reward them.
+
+- Use customer profiles to find and target similar buyers.
+
+- Ensure these high-performing products remain well-stocked and promoted.
+
+---
 
 7. Which small business customer had the highest sales?
 
