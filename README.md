@@ -23,26 +23,29 @@ The analysis focuses on helping the KMS management team understand where the bus
 
 ### Objectives
 ---
-1. Identify which product categories and regions contribute most to revenue:
+## Identify which product categories and regions contribute most to revenue:
 
-This involves analyzing the total sales across different product categories (e.g., Technology, Furniture) and geographical regions (e.g., West, Ontario).
-Purpose: To find out where most of the company’s revenue comes from, so that management can focus marketing and inventory efforts on the strongest-performing areas.
+This involves analyzing the total sales across different product categories (e.g., Technology, Furniture) and geographical regions (e.g., West, Ontario).  
+**Purpose:** To find out where most of the company’s revenue comes from, so that management can focus marketing and inventory efforts on the strongest-performing areas.
 
-2. Evaluate customer profitability, loyalty, and purchasing behavior
+## Evaluate customer profitability, loyalty, and purchasing behavior
 
-This includes identifying high-value customers based on sales, profit contribution, and purchase frequency, and understanding what products they typically buy.
-Purpose: To better understand customer behavior, prioritize relationship-building with loyal and profitable customers, and use their profiles to attract similar customers.
+This includes identifying high-value customers based on sales, profit contribution, and purchase frequency, and understanding what products they typically buy.  
+**Purpose:** To better understand customer behavior, prioritize relationship-building with loyal and profitable customers, and use their profiles to attract similar customers.
 
-3. Understand shipping cost distribution relative to order priorities
+## Understand shipping cost distribution relative to order priorities
 
-Analyze how much shipping cost is incurred for different shipping methods and whether it aligns with the urgency of order priority (e.g., High vs Low Priority).
-Purpose: To determine if shipping resources are being used efficiently, or if fast and expensive shipping methods are being overused for non-urgent orders.
+Analyze how much shipping cost is incurred for different shipping methods and whether it aligns with the urgency of order priority (e.g., High vs Low Priority).  
+**Purpose:** To determine if shipping resources are being used efficiently, or if fast and expensive shipping methods are being overused for non-urgent orders.
 
-4. Make strategic recommendations based on revenue trends, product demand, and customer value
+## Make strategic recommendations based on revenue trends, product demand, and customer value
 
-After all analyses are done, the findings will be used to make specific business suggestions, such as: Which product categories to promote, Which regions 
-to invest more in, Which customers to retain or target.
-Purpose: To turn raw data into actionable insights that support strategic planning, marketing, inventory management, and profitability.
+After all analyses are done, the findings will be used to make specific business suggestions, such as:
+- Which product categories to promote
+- Which regions to invest more in
+- Which customers to retain or target  
+**Purpose:** To turn raw data into actionable insights that support strategic planning, marketing, inventory management, and profitability.
+
 
 ### Expected Outcome
 ---
