@@ -23,22 +23,22 @@ The analysis focuses on helping the KMS management team understand where the bus
 
 ### Objectives
 ---
-## Identify which product categories and regions contribute most to revenue:
+#### Identify which product categories and regions contribute most to revenue:
 
 This involves analyzing the total sales across different product categories (e.g., Technology, Furniture) and geographical regions (e.g., West, Ontario).  
 **Purpose:** To find out where most of the company’s revenue comes from, so that management can focus marketing and inventory efforts on the strongest-performing areas.
 
-## Evaluate customer profitability, loyalty, and purchasing behavior
+#### Evaluate customer profitability, loyalty, and purchasing behavior
 
 This includes identifying high-value customers based on sales, profit contribution, and purchase frequency, and understanding what products they typically buy.  
 **Purpose:** To better understand customer behavior, prioritize relationship-building with loyal and profitable customers, and use their profiles to attract similar customers.
 
-## Understand shipping cost distribution relative to order priorities
+#### Understand shipping cost distribution relative to order priorities
 
 Analyze how much shipping cost is incurred for different shipping methods and whether it aligns with the urgency of order priority (e.g., High vs Low Priority).  
 **Purpose:** To determine if shipping resources are being used efficiently, or if fast and expensive shipping methods are being overused for non-urgent orders.
 
-## Make strategic recommendations based on revenue trends, product demand, and customer value
+#### Make strategic recommendations based on revenue trends, product demand, and customer value
 
 After all analyses are done, the findings will be used to make specific business suggestions, such as:
 - Which product categories to promote
@@ -51,29 +51,27 @@ After all analyses are done, the findings will be used to make specific business
 ---
 Through this analysis, the project seeks to deliver actionable insights that will help:
 
-- Ranked list of product categories and regions by total sales:
+#### Ranked list of product categories and regions by total sales:
 
-A clear report showing which categories and regions perform best in terms of revenue.
-Benefit: Helps the company focus on its strongest products and markets.
+A clear report showing which categories and regions perform best in terms of revenue.  
+**Benefit:** Helps the company focus on its strongest products and markets.
 
-- Identification of the most and least valuable customers:
+#### Identification of the most and least valuable customers:
 
-A breakdown of the top 10 and bottom 10 customers based on sales and profit, and insight into their behavior (what they buy, how often, etc.).
-Benefit: Enables targeted marketing, customer retention strategies, and sales focus.
+A breakdown of the top 10 and bottom 10 customers based on sales and profit, and insight into their behavior (what they buy, how often, etc.).  
+**Benefit:** Enables targeted marketing, customer retention strategies, and sales focus.
 
-- Insight into shipping cost efficiency by shipping method and order priority
+#### Insight into shipping cost efficiency by shipping method and order priority
 
-Evaluation of whether fast and costly shipping (like Express Air) is being used appropriately for urgent orders, and whether cheaper options (like Delivery Truck) are underutilized.
-Benefit: Helps reduce unnecessary shipping expenses and improve operational efficiency.
+Evaluation of whether fast and costly shipping (like Express Air) is being used appropriately for urgent orders, and whether cheaper options (like Delivery Truck) are underutilized.  
+**Benefit:** Helps reduce unnecessary shipping expenses and improve operational efficiency.
 
-- Clear recommendations for improving profitability, customer targeting, and operational efficiency
+#### Clear recommendations for improving profitability, customer targeting, and operational efficiency
 
-Which product lines to invest more in.
-
-Which customers to build relationships with.
-
-How to adjust shipping strategy to save costs:
-Benefit: Provides the company with practical, data-backed actions to grow revenue and reduce waste.
+- Which product lines to invest more in
+- Which customers to build relationships with
+- How to adjust shipping strategy to save costs  
+**Benefit:** Provides the company with practical, data-backed actions to grow revenue and reduce waste.
 
 ### Data Source
 ---
