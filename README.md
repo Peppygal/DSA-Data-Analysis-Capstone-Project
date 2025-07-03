@@ -224,7 +224,7 @@ This query suggests variations in customer demand, market size, or distribution 
 
 - For Top Regions (West, Ontario, Prarie):
 
-Investigate successful strategies and replicate them elsewhere.
+Investigate successful strategies and replicate them in underperforming regions.
 
 Consider expanding product lines or services in these regions.
 
@@ -258,7 +258,7 @@ Based on our analysis, Appliances generated over ₦202346.8639 in sales in Onta
 
 This suggests a strong demand for home or office appliances within that region.
 
-Appliances in Ontario could be one of the highest-performing product subcategories by regional combination.
+Appliances in Ontario could be one of the highest-performing product sub-categories by regional combination.
 
 ### Relevance to Dataset & Project:
 
@@ -300,7 +300,7 @@ An analysis of the customer base shows that the bottom 10 customers contribute t
 Recommendations to Increase Revenue from Bottom 10 Customers:
 
 Understand Their Behavior: Conduct a customer profile analysis to understand their industry, purchase history, order frequency, and preferences.
-Ask: Why aren’t they buying more? — Is it pricing? Product fit? Awareness?
+Ask Why aren’t they buying more? — Is it pricing? Product fit? Awareness?
 
 Personalized Engagement: Assign a sales rep or customer success contact to engage them directly. Tailor communication and recommendations based on their specific needs or sector.
 
@@ -329,10 +329,10 @@ The bottom 10 customers currently contribute the least to KMS revenue. However, 
 
 ### Insight Derived:
 
-From our analysis, Delivery Truck is the shipping method that incurs the highest total shipping cost, amounting to 51,971.94 (approx).
+From our analysis, Delivery Truck is the shipping method that incures the highest total shipping cost, amounting to 51,971.94 (approx).
 This suggests that delivery trucks are either:
 
-Used more frequently, Cover longer distances, or Incur higher operational/logistical expenses compared to other methods.
+Used more frequently, Cover longer distances, or Incure higher operational/logistical expenses compared to other methods.
 
  ### Potential Next Steps:
 
