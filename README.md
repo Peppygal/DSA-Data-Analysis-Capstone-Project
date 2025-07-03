@@ -213,7 +213,7 @@ Two SQL queries were used anaylsis Top 3 Regions by Sales and Bottom 3 Regions b
 ### Insight Derived:
 
 Top 3 Regions:
-West, Ontario, and Peru are the highest-performing regions. These are the strongest markets and contribute the most to revenue.
+West, Ontario, and Prarie are the highest-performing regions. These are the strongest markets and contribute the most to revenue.
 
 Bottom 3 Regions:
 Nunavut, Northwest Territories, and Yukon recorded the lowest sales. These regions are underperforming compared to others.
