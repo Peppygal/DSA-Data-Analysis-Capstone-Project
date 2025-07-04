@@ -10,9 +10,8 @@ Capstone Project Documentation with the Incubator's Hub.
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Tools Used](#tools-used)
 - [Analysis](#analysis)
-- [Business Task and Dashboard Component](#business-task-dashboard-component)
-- [Key Strategies and Recommendations](#key-strategies-and-recommendation)
-- [Conclusion](#conclusion)
+- [SQL Queries](#sql-queries)
+- [Overall Conclusion](#over-conclusion)
 
 ### Project Overview
 ---
@@ -46,7 +45,7 @@ After all analyses are done, the findings will be used to make specific business
 **Purpose:** To turn raw data into actionable insights that support strategic planning, marketing, inventory management, and profitability.
 
 
-### Expected Outcome
+### Expected Outcomes
 ---
 Through this analysis, the project seeks to deliver actionable insights that will help:
 
@@ -290,13 +289,13 @@ Segment Ontario appliance buyers for loyalty rewards or cross-sell opportunities
    ```
    <img width="456" alt="SQL d" src="https://github.com/user-attachments/assets/91708232-af5a-4e6d-92cf-2b6f58eb5a37" />
 
-Insight Dervied: 
+### Insight Dervied: 
 
 Bottom 10 Customers by Revenue
 
 An analysis of the customer base shows that the bottom 10 customers contribute the least revenue to the company. While these customers currently have minimal sales activity, they represent a potential growth opportunity if strategically nurtured.
 
-Recommendations to Increase Revenue from Bottom 10 Customers:
+### Recommendations to Increase Revenue from Bottom 10 Customers:
 
 Understand Their Behavior: Conduct a customer profile analysis to understand their industry, purchase history, order frequency, and preferences.
 Ask Why aren’t they buying more? — Is it pricing? Product fit? Awareness?
@@ -582,7 +581,23 @@ Conduct a cost-benefit analysis of past shipments to reduce overspending and imp
 Train fulfilment staff or update automation rules to prioritize efficiency and urgency appropriately.
 
 
-      
+---
+
+### Overall Conclusion
+
+The KMS Superstore data analysis provided valuable insights into the company's performance across product categories, customer segments, geographical regions, and shipping methods. The analysis revealed that Technology was the top-performing product category, while regions like West and Ontario generated the highest revenue. Additionally, identifying high-value customers and their buying behavior allowed the company to better understand customer profitability and loyalty.
+
+Shipping cost analysis showed opportunities to optimize logistics by aligning order priority with appropriate shipping methods. Furthermore, the assessment of bottom-performing regions and customers highlighted areas where targeted marketing and engagement strategies could drive improved sales and retention.
+
+In summary, this project has equipped KMS with data-backed insights to:
+
+Focus on high-revenue products and regions,
+
+Strengthen relationships with profitable customers,
+
+Improve operational efficiency in shipping,
+
+And make strategic decisions to drive future growth and profitability.      
 
 
 
