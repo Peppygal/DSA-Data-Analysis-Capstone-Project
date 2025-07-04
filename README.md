@@ -1,4 +1,5 @@
 # DSA-Data-Analysis-Capstone-Project
+
 Capstone Project Documentation with the Incubator's Hub.
 
 #### Kultra Mega Stores Inventory Sales Analysis
@@ -597,7 +598,22 @@ Strengthen relationships with profitable customers,
 
 Improve operational efficiency in shipping,
 
-And make strategic decisions to drive future growth and profitability.      
+And make strategic decisions to drive future growth and profitability.    
+
+### Files in this Repository
+- Code Block Syntax - to make the quries copyable 
+- SQL.png/SQ.png — Screenshot of the of the query results
+- README.md — Project documentation (this file)
+
+---
+
+**Project by**
+
+Nwaebichi Perpetual
+
+Data Analyst | SQL & Business Intelligence Enthusiast 
+
+
 
 
 
