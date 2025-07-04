@@ -601,7 +601,7 @@ Improve operational efficiency in shipping,
 And make strategic decisions to drive future growth and profitability.    
 
 ### Files in this Repository
-- Code Block Syntax - to make the quries copyable 
+- Code Block Syntax — to make the quries copyable 
 - SQL.png/SQ.png — Screenshot of the of the query results
 - README.md — Project documentation (this file)
 
