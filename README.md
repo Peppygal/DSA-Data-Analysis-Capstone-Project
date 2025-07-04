@@ -1,6 +1,6 @@
 # DSA-Data-Analysis-Capstone-Project
 
-Capstone Project Documentation with the Incubator's Hub.
+KMS Capstone Project Documentation with the Incubator's Hub.
 
 #### Kultra Mega Stores Inventory Sales Analysis
 
