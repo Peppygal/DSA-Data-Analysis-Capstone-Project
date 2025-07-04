@@ -4,14 +4,14 @@ Capstone Project Documentation with the Incubator's Hub.
 #### Kultra Mega Stores Inventory Sales Analysis
 
 - [Project Overview](#project-overview)
-- [Objectives](#obectives)
+- [Objectives](#objectives)
 - [Expected Outcomes](#expected-outcomes)
 - [Data Source](#data-source)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Tools Used](#tools-used)
 - [Analysis](#analysis)
 - [SQL Queries](#sql-queries)
-- [Overall Conclusion](#over-conclusion)
+- [Overall Conclusion](#overall-conclusion)
 
 ### Project Overview
 ---
